@@ -21,8 +21,9 @@ screen and (min-width:401px),
         height: 100%;
         display: grid;
         justify-items: center;
-        grid-template-rows: 64px max-content 30px 48px;
+        grid-template-rows: 64px auto 30px 48px;
         background: white;
+        align-items: center;
     }
 
     div[class^=under-item]:hover div[class^=item], div[class^=item]:hover{
