@@ -1,0 +1,103 @@
+@media tv and (min-width:401px),
+screen and (min-width:401px),
+(device-aspect-ratio: 16/9) and (min-width:401px),
+(device-aspect-ratio: 16/10) and (min-width:401px) {
+    main.product{
+        display: grid;
+        grid-template-columns: max-content max-content auto;
+        grid-column-gap: 8px;
+        padding: 8px;
+        width: calc(80vw - 16px);
+        min-width: 784px;
+    }
+
+    section.image-list{
+        display: grid;
+        grid-template-rows: repeat(4, 72px);
+        width: 80px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .thumbnail {
+        cursor: pointer;
+        max-width: 96px;
+        max-height: 72px;
+        background-blend-mode: normal;
+    }
+
+    .thumbnail:hover{
+        background-blend-mode: multiply;
+    }
+
+    section.image-list > img#selected{
+        filter: none;
+    }
+
+    section.image > img {
+        max-width: 364px;
+        max-height: 364px;
+    }
+
+    section.product-desc{
+        padding: 0 8px;
+        display: grid;
+        grid-template-rows: max-content auto;
+        align-items: center;
+        justify-items: center;
+    }
+
+    section.product-desc h2 {
+        margin: 8px 4px;
+        justify-self: end;
+    }
+
+    section.product-desc h6 {
+        height: 20px;
+        font-size: 13px;
+        justify-self: end;
+        color: grey;
+        margin: 0 8px;
+    }
+
+    section.product-desc + section > p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    section.product-desc > form {
+        display: grid;
+        justify-items: center;
+        grid-gap: 8px;
+    }
+
+    section.product-desc select {
+        cursor: pointer;
+        height: 24px;
+        width: 40px;
+        border-radius: 3px;
+        border: 1px solid grey;
+    }
+
+    section.product-desc button {
+        margin: 0;
+    }
+
+    section.product-desc + section {
+        position: relative;
+        width: calc(80vw - 32px);
+        min-width: 752px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+
+@media (max-width:400px){
+}
+
+
+
+@media handheld and (min-width:401px),
+(orientation:portrait) and (min-width:401px) {
+}

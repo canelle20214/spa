@@ -1,0 +1,376 @@
+﻿@media handheld and (min-width:401px), (orientation:portrait) and (min-width:401px) {
+
+    .img-announce-details {
+        height: 230px;
+        max-width: 64vw;
+        justify-self: center;
+    }
+
+    .banner-announcedetails-div {
+        display: grid;
+        margin-top: 8vh;
+        background: hsl(157, 90.7%, 90.8%);
+    }
+
+    .banner-announcedetails-div > fieldset, .profilesellerdiv {
+        display: grid;
+        min-width: 80vw;
+        align-items: center;
+        padding: 12vh 8vw;
+        justify-self: center;
+        background: white;
+        color: black;
+    }
+
+    .banner-announcedetails-div > fieldset > div {
+        text-align: center;
+        display: grid;
+        grid-template-rows: max-content max-content auto max-content max-content max-content max-content max-content auto;
+    }
+
+    #Quantity_OrderItem {
+        max-width: 85px;
+    }
+
+    .title-announcedetails {
+        color: black;
+        text-align: center;
+        font-size: 160%;
+    }
+
+    .product-announcedetails {
+        font-style: italic;
+        color: darksalmon;
+    }
+
+    .price-announcedetails-div {
+        display: grid;
+        grid-template-columns: 95px max-content max-content;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .price-announcedetails-div span {
+        color: #A2A2A2;
+    }
+
+    .div-2spans-online {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap: 6px;
+    }
+
+    .writen-75 {
+        font-size: 75%;
+    }
+
+    .description-announcedetails {
+        color: #A2A2A2;
+    }
+
+    .total-announcedetails {
+        display: grid;
+        padding: 2vh 2vw;
+        grid-gap: 6px;
+    }
+
+    .addtocart-btn:hover {
+        background: hsl(15,72%,60%);
+        color: black;
+    }
+
+    .addtocart-btn {
+        display: block;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        background: darksalmon;
+        padding: 2vh 6vw;
+        border-radius: 3px;
+    }
+
+    .addtocart-btn-section-div{
+        display: grid;
+    }
+
+    .gotoprofileseller {
+        color: darksalmon;
+        cursor: pointer;
+    }
+
+    .gotoprofileseller:hover{
+        color: black;
+        background: darksalmon;
+    }
+
+    .img-user-profile-seller{
+        height: 10vh;
+        width: 10vh;
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+        border-radius: 50%;
+    }
+
+    .background-profileseller {
+        background: rgb(249, 227, 220);
+        display: grid;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .img-announce-details {
+        height: 230px;
+        max-width: 64vw;
+        justify-self: center;
+    }
+
+    .banner-announcedetails-div {
+        display: grid;
+        margin-top: 8vh;
+        background: hsl(157, 90.7%, 90.8%);
+    }
+
+    .banner-announcedetails-div > fieldset, .profilesellerdiv {
+        display: grid;
+        min-width: 80vw;
+        align-items: center;
+        padding: 12vh 8vw;
+        justify-self: center;
+        background: white;
+        color: black;
+    }
+
+    .banner-announcedetails-div > fieldset > div {
+        text-align: center;
+        display: grid;
+        grid-template-rows: max-content max-content auto max-content max-content max-content max-content max-content auto;
+    }
+
+    #Quantity_OrderItem {
+        max-width: 85px;
+    }
+
+    .title-announcedetails {
+        color: black;
+        text-align: center;
+        font-size: 3.2vh;
+    }
+
+    .product-announcedetails {
+        font-style: italic;
+        color: darksalmon;
+        font-size: 2.4vh;
+    }
+
+    .price-announcedetails-div {
+        display: grid;
+        grid-template-columns: 95px max-content max-content;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .price-announcedetails-div span {
+        font-size: 20px;
+        color: #A2A2A2;
+    }
+
+    .div-2spans-online {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap: 6px;
+    }
+
+    .writen-75 {
+        font-size: 2vh;
+    }
+
+    .description-announcedetails {
+        color: #A2A2A2;
+    }
+
+    .banner-announces-title-div > span{
+        width: calc(84vw - 16px);
+    }
+
+    .total-announcedetails {
+        display: grid;
+        padding: 2vh 2vw;
+        grid-gap: 6px;
+        font-size: 20px;
+    }
+
+    .addtocart-btn:hover {
+        background: hsl(15,72%,60%);
+        color: black;
+    }
+
+    .addtocart-btn {
+        display: block;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        background: darksalmon;
+        font-size: 20px;
+        padding: 1.5vh 2vw;
+        border-radius: 3px;
+    }
+
+    .addtocart-btn-section-div{
+        display: grid;
+    }
+
+    .gotoprofileseller {
+        color: darksalmon;
+        cursor: pointer;
+    }
+
+    .gotoprofileseller:hover{
+        color: black;
+        background: darksalmon;
+    }
+
+    .img-user-profile-seller {
+        height: 30vw;
+        width: 30vw;
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+        border-radius: 50%;
+    }
+
+    .background-profileseller {
+        background: rgb(249, 227, 220);
+        display: grid;
+    }
+}
+
+@media tv and (min-width:401px), screen and (min-width:401px), (device-aspect-ratio: 16/9) and (min-width:401px), (device-aspect-ratio: 16/10) and (min-width:401px) {
+
+    .img-announce-details {
+        height: 230px;
+        max-width: 500px;
+        justify-self: center;
+    }
+
+    .banner-announcedetails-div {
+        display: grid;
+        margin-top: 8vh;
+        background: hsl(157, 90.7%, 90.8%);
+    }
+
+    .banner-announcedetails-div > fieldset{
+        display: grid;
+        min-width: 700px;
+        align-items: center;
+        padding: 15vh 12vw;
+        justify-self: center;
+        background: white;
+        color: black;
+    }
+
+    .profilesellerdiv {
+        display: grid;
+        align-items: center;
+        padding: 15vh 2vw;
+        justify-self: center;
+        background: white;
+    }
+
+    .banner-announcedetails-div > fieldset > div {
+        text-align: center;
+        display: grid;
+        grid-template-rows: max-content max-content auto max-content max-content max-content max-content max-content auto;
+    }
+
+    #Quantity_OrderItem {
+        max-width: 85px;
+    }
+
+    .title-announcedetails {
+        color: black;
+        text-align: center;
+        font-size: 160%;
+    }
+
+    .product-announcedetails {
+        font-style: italic;
+        color: darksalmon;
+    }
+
+    .price-announcedetails-div {
+        display: grid;
+        grid-template-columns: 95px max-content max-content;
+        justify-self: center;
+        margin: 20px;
+    }
+
+    .price-announcedetails-div span {
+        color: #A2A2A2;
+    }
+
+    .div-2spans-online {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-gap: 6px;
+    }
+
+    .writen-75 {
+        font-size: 75%;
+    }
+
+    .description-announcedetails {
+        color: #A2A2A2;
+    }
+
+    .total-announcedetails {
+        display: grid;
+        padding: 2vh 2vw;
+        grid-gap: 6px;
+    }
+
+    .addtocart-btn:hover {
+        background: hsl(15,72%,60%);
+        color: black;
+    }
+
+    .addtocart-btn {
+        display: block;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: 4px 0 0 0;
+        background: darksalmon;
+        padding: 2vh 1vw;
+        border-radius: 3px;
+    }
+
+    .addtocart-btn-section-div{
+        display: grid;
+    }
+
+    .gotoprofileseller {
+        color: darksalmon;
+        cursor: pointer;
+    }
+
+    .gotoprofileseller:hover{
+        color: black;
+        background: darksalmon;
+    }
+
+    .img-user-profile-seller {
+        height: 80px;
+        width: 80px;
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+        border-radius: 50%;
+    }
+
+    .background-profileseller {
+        background: rgb(249, 227, 220);
+        display: grid;
+    }
+}
