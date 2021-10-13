@@ -20,9 +20,12 @@ $path = __DIR__ . DIRECTORY_SEPARATOR . 'views';
 $router = new App\Router($path);
 
 
-$router->getPost('/connexion', 'login', 'login')
+$router->get('/', 'home', 'home')
+		->getPost('/connexion', 'login', 'login')
+		->getPost('/admin', 'admin', 'admin')
 		->getPost('/inscription', 'register', 'register')
 		->getPost('/notre-ami/[i:slug]/', 'animal', 'animal')
+		->getPost('/édition-compagnon/[i:slug]/', 'editanimal', 'editanimal')
 		->get('/tous-nos-amis', 'animals', 'animals')
 		->get('/nos-amis-disponibles', 'availableanimals', 'availableanimals')
 		->get('/mon-compte', 'account', 'account')

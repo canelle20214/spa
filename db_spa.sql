@@ -72,7 +72,11 @@ INSERT INTO `animal` (`id`, `name`, `sexe`, `birthday`, `specie`, `breed`, `desc
 (1, 'cookie', 'mâle', '2021-01-04', 'chien', 'labrador', 'Ce gentil chien saura remplir votre quotidien de bonheur et n\'attend que votre l\'amour en retour. Il a été abandonné par sa précédente famille. Méfiant au début, il s\'est fait quelques amis au refuge et est un compagnon de vie très sage.', 2, '2021-08-23 07:41:25'),
 (2, 'ada', 'femelle', '2021-12-08', 'chien', 'croisé', 'Ada est vive et adore jouer ! Elle a beaucoup d\'amour à offrir et sera votre plus fidèle compagnon. Elle est parfois peureuse et nous soupçonnons ses anciens propriétaires de l\'avoir maltraîtée. Elle a besoin d\'une famille douce.', 0, '2021-09-28 15:04:06'),
 (3, 'red', 'mâle', '2019-03-23', 'chien', 'teckel', 'Ce chien est tout simplement une petite fusée ! Plein de bonne humeur et d\'énergie, il sera le plus heureux du monde quand vous irez le promener. Malgré son enthousiasme débordant, il est très obéisant et comprend tout ce qu\'on lui dit.', 0, '2021-10-02 16:40:51'),
-(4, 'hendrix', 'mâle', '2015-10-13', 'chat', 'européen', 'Sa fourure est incroyablement douce. Vous ne trouverez pas de chat plus câlin. On peut qualifier Hendrix d\'énorme boule de poil, mais c\'est prendre le rique qu\'il se vexe.', 1, '2021-09-13 11:19:48');
+(4, 'hendrix', 'mâle', '2015-10-13', 'chat', 'européen', 'Sa fourure est incroyablement douce. Vous ne trouverez pas de chat plus câlin. On peut qualifier Hendrix d\'énorme boule de poil, mais c\'est prendre le rique qu\'il se vexe.', 1, '2021-09-13 11:19:48'),
+(5, 'bulle', 'femelle', '2017-03-30', 'chat', 'européen', 'Cette boule d\'amour, un peu maladroite adore les croquettes et les caresses. Bulle aime les autres chats et ne va jamais vers le conflit.', 1, '2021-09-30 16:35:12'),
+(6, 'milou', 'mâle', '2020-02-23', 'chat', 'européen', 'Milou est joueur et câlin. Il sera vous faire sourire avec ses cabrioles pendant son quart d\'heure de folie.', 0, '2021-09-25 09:44:42'),
+(7, 'canaille', 'femelle', '2019-12-22', 'chien', 'beagle', 'Canaille est une chienne pleine d\'énergie ! Elle n\'a pas été dressée par son ancienne famille, alors l\'association a commencé ce travail. Elle apprend très vite et adore les enfants !', 0, '2021-09-07 11:35:09'),
+(8, 'kitty', 'femelle', '2014-11-05', 'chien', 'bouledogue français', 'Kitty a un regard très vif et aime se promener. Elle obéit très bien et vous suivra partout sans besoin de laisse.', 2, '2021-07-15 19:02:37');
 
 -- --------------------------------------------------------
 

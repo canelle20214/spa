@@ -26,7 +26,7 @@ function deleteUserById(int $id)
 function getCurrentUser()
 {
     $db = new DataBase;
-    if(is_connected()){
+    if(is_connected_user()){
         $user = $db->select_one_class("SELECT * FROM `user` WHERE id = ?", "App\User", [$_SESSION['current-user-id']]);
         return $user;
     }

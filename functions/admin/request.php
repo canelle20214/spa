@@ -20,6 +20,16 @@ function deleteAdminById(int $id)
 	return $res;
 }
 
+function getCurrentAdmin()
+{
+    $db = new DataBase;
+    if(is_connected_admin()){
+        $admin = $db->select_one_class("SELECT * FROM `admin` WHERE id = ?", "App\Admin", [$_SESSION['current-admin-id']]);
+        return $admin;
+    }
+ return;
+}
+
 function getAllAdmins()
 {
     $db = new DataBase;

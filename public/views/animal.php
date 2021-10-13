@@ -20,8 +20,11 @@
             <h6>
                 <?= $animal->get_Birthday()?>
             </h6>
-            <h6 id="product-price">
+            <h6>
                 <?= $animal->get_Breed() ?>
+            </h6>
+            <h6>
+                <?= $animal->get_ArrivedAt() ?>
             </h6>
             <span class="status-<?= $animal->get_Status() ?>">
                 <?= $animal->get_StatusText() ?>

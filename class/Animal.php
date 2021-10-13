@@ -75,7 +75,7 @@ class Animal {
     public function get_ArrivedAt() : string
     {
       $date = new \DateTime($this->arrived_at);
-      return $date->format('d-m-Y H:i:s');
+      return "recueilli(e) le ". $date->format('d-m-Y');
     }
 
     public function construct_Slug(int $id) : string

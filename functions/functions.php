@@ -1,6 +1,7 @@
 <?php
 
 require 'admin/request.php';
+require 'admin/validate.php';
 require 'animal/request.php';
 require 'routes/redirect.php';
 require 'routes/routes.php';

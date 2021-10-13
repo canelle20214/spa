@@ -47,7 +47,7 @@ $script = SCRIPT_PATH . DIRECTORY_SEPARATOR . 'app.js';
 						Nos amis disponibles
 					</a>
 				</li>
-				<?php if(!is_connected()): ?>
+				<?php if(!is_connected_user() && !is_connected_admin()): ?>
 					<li>
 						<span>
 							<a href=<?= $router->generate('login')?>>
@@ -57,7 +57,7 @@ $script = SCRIPT_PATH . DIRECTORY_SEPARATOR . 'app.js';
 					</li>
 				<?php endif ?>
 			</ul>
-			<?php if(is_connected()): ?>
+			<?php if(is_connected_user() || is_connected_admin()): ?>
 				<div>
 					<img id="account" src=<?= $account?>>
 					<ul id="hidden-menu">

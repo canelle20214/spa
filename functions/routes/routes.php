@@ -1,5 +1,29 @@
 <?php
 
+function adminFunc(): void
+{
+  $login = $_POST['current-login'] ?? '';
+  $password = $_POST['current-password'] ?? '';
+  $hashpassword = password_hash($password, PASSWORD_DEFAULT, ['cost'=>16]);
+  if(!empty($_POST['current-login']) && !empty($_POST['current-password'])) {
+    if(isLoginExists($login)){
+      if(isLoginMatchsPassword($login, $password)){
+        $admin = getAdminByLogin($login);
+        $_SESSION["current-admin-id"] = $admin->get_Id();
+        $GLOBALS['validationMessage'] = 'Bienvenue ' . $admin->get_Login();
+      }else{
+        $errorMessage[] = "Le mot de passe ne correspond pas à votre adresse mail.";
+      }
+    }
+    else{
+      $errorMessage[] = "Cette adresse mail n'est pas attribuée.";
+    }
+  }
+  if(isset($_SESSION["current-admin-id"])){
+    redirect_connected_admin();
+  }
+}
+
 function editPasswordFunc(): void 
 {
   redirect_unconnected_user();
@@ -46,9 +70,6 @@ function loginFunc(): void{
       if(isMailMatchsPassword($mail, $password)){
         $user = getUserByMail($mail);
         $_SESSION["current-user-id"] = $user->get_Id();
-        $_SESSION["current-basket"] = Array();
-        $_SESSION["current-address-id"] = -1;
-        $_SESSION["current-payment-id"] = -1;
         $GLOBALS['validationMessage'] = 'Bienvenue ' . $user->get_Firstname();
       }else{
         $errorMessage[] = "Le mot de passe ne correspond pas à votre adresse mail.";
@@ -72,9 +93,6 @@ function registerFunc(): void {
         session_start();
       }
       $_SESSION["current-user-id"] = $id;
-      if(!isset($_SESSION["current-basket"])){
-        $_SESSION["current-basket"] = Array();
-      }
       $GLOBALS['validationMessage'] = 'Votre compte a été créé avec succés.';
     }
   }

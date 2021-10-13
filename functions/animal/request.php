@@ -26,14 +26,21 @@ function deleteAnimalById(int $id)
 function getAllAnimals()
 {
     $db = new DataBase;
-    $animals = $db->select_class("SELECT * FROM `animal`", "App\Animal");
+    $animals = $db->select_class("SELECT * FROM `animal`  ORDER BY arrived_at DESC", "App\Animal");
+    return $animals;
+}
+
+function getRecentAnimals()
+{
+    $db = new DataBase;
+    $animals = $db->select_class("SELECT * FROM `animal` WHERE `arrived_at` >= DATE_SUB(NOW(), INTERVAL 30 DAY) ORDER BY arrived_at DESC", "App\Animal");
     return $animals;
 }
 
 function getAvailableAnimals()
 {
     $db = new DataBase;
-    $animals = $db->select_class("SELECT * FROM `animal` WHERE `status`=0", "App\Animal");
+    $animals = $db->select_class("SELECT * FROM `animal` WHERE `status`=0  ORDER BY arrived_at DESC", "App\Animal");
     return $animals;
 }
 
