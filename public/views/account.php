@@ -53,12 +53,12 @@ if(!is_connected_user() && !is_connected_admin()){
 				</li>
 				<li>
 					<button id="btn-animals" class="btn-nav" onclick="changeSection('animals')">
-						Animals
+						Animaux
 					</button>
 				</li>
 				<li>
 					<button id="btn-admins" class="btn-nav" onclick="changeSection('admins')">
-						Admins
+						Administrateurs
 					</button>
 				</li>
 			</ul>

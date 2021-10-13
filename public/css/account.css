@@ -183,7 +183,7 @@
     }
     section#animals li{
         display: grid;
-        grid-template-columns: 96px 4fr 4fr auto;
+        grid-template-columns: 96px 2fr 3fr auto;
         grid-gap: 18px;
         align-items: center;
         margin-bottom: 8px;
