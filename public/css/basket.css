@@ -1,0 +1,292 @@
+@media handheld and (min-width:401px), 
+(orientation:portrait) and (min-width:401px) {
+    main#basket{
+        display: grid;
+        width: calc(80vw - 32px);
+        min-width: calc(400px - 32px);
+        grid-template: max-content auto/ auto max-content;
+        grid-column-gap: 24px;
+        padding: 0 16px 32px 16px;
+    }
+
+    section.basket{
+        width: 100%;
+    }
+
+    main#basket h1{
+        grid-column: 1/3;
+    }
+
+    ul.articles{
+        width: calc(100% - 40px);
+    }
+
+    ul.articles li{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: max-content 4.5fr 1.5fr 1fr 1fr;
+        align-items: center;
+        height: 96px;
+        list-style: none;
+        border-bottom: 1px solid #fec65b;
+    }
+
+    ul.articles li h6:not(:first-of-type),
+    ul.articles li img.icon{
+        justify-self: center;
+    }
+
+    ul.articles li h6:not(:first-of-type){
+        margin: 6px;
+    }
+    
+    ul.articles img{
+        max-height: 72px;
+        max-width: 72px;
+    }
+
+    img.icon{
+        cursor: pointer;
+        height: 18px;
+        width: 18px;
+    }
+
+    main#deliveryinfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+    }
+
+    main#deliveryinfo > h2, 
+    main#deliveryinfo > section:last-child{
+        grid-column: 1/3;
+    }
+
+    main#deliveryinfo > section.address{
+        display: grid;
+        grid-gap: 16px;
+        justify-items: center;
+        padding: 16px;
+        box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.3);
+    }
+
+    section.address ul,
+    section.address li{
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    section.address dd{
+        display: grid;
+        margin: 12px 0 12px 40px;
+    }
+
+    section.address address{
+        display: grid;
+        border-bottom: 1px solid #fec65b;
+        margin: 16px 0;
+    }
+
+    section.address address:last-of-type{
+        border-bottom: none;
+    }
+
+    section.address h4{
+        color: #fea701;
+    }
+
+    section.address address > button{
+        margin: 0 0 24px 0;
+        justify-self: center;
+    }
+
+    section#paiement{
+        width: 300px;
+        text-align: center;
+    }
+
+    div#quantity-div{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    div#quantity-div button{
+        margin: 0;
+        padding: 5px;
+        line-height: 0.6;
+        min-height: max-content;
+    }
+
+    #card-element{
+        padding: 16px 0;
+    }
+
+    #card-errors{
+        margin: 10px 0px;
+        border-radius: 3px;
+        padding: 8px;
+        font-size: 14px;
+        font-family: 'Montserrat Light';
+        background-color: #FFD2D2;
+        color: #eb1c26;
+    }
+    #card-errors:empty{
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+
+    
+}
+
+@media tv and (min-width:401px), 
+screen and (min-width:401px), 
+(device-aspect-ratio: 16/9) and (min-width:401px), 
+(device-aspect-ratio: 16/10) and (min-width:401px) {
+    main#basket{
+        display: grid;
+        width: calc(80vw - 32px);
+        min-width: calc(400px - 32px);
+        grid-template: max-content auto/ auto max-content;
+        grid-column-gap: 24px;
+        padding: 0 16px 32px 16px;
+    }
+
+    section.basket{
+        width: 100%;
+    }
+
+    main#basket h1{
+        grid-column: 1/3;
+    }
+
+    ul.articles{
+        width: calc(100% - 40px);
+    }
+
+    ul.articles li{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: max-content 4.5fr 1.5fr 1fr 1fr;
+        align-items: center;
+        height: 120px;
+        list-style: none;
+        border-bottom: 1px solid #fec65b;
+    }
+
+    ul.articles li h6:not(:first-of-type),
+    ul.articles li img.icon{
+        justify-self: center;
+    }
+
+    ul.articles li h6:not(:first-of-type){
+        margin: 6px;
+    }
+    
+    ul.articles img{
+        max-height: 96px;
+        max-width: 96px;
+    }
+
+    img.icon{
+        cursor: pointer;
+        height: 18px;
+        width: 18px;
+    }
+
+    main#deliveryinfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px;
+    }
+
+    main#deliveryinfo > h2, 
+    main#deliveryinfo > section:last-child{
+        grid-column: 1/3;
+    }
+
+    main#deliveryinfo > section.address{
+        display: grid;
+        grid-gap: 16px;
+        justify-items: center;
+        padding: 16px;
+        box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.3);
+    }
+
+    section.address ul,
+    section.address li{
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    section.address dd{
+        display: grid;
+        margin: 12px 0 12px 40px;
+    }
+
+    section.address address{
+        display: grid;
+        border-bottom: 1px solid #fec65b;
+        margin: 16px 0;
+    }
+
+    section.address address:last-of-type{
+        border-bottom: none;
+    }
+
+    section.address h4{
+        color: #fea701;
+    }
+
+    section.address address > button{
+        margin: 0 0 24px 0;
+        justify-self: center;
+    }
+
+    section#paiement{
+        width: 600px;
+        text-align: center;
+    }
+
+    div#quantity-div{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: max-content;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+
+    div#quantity-div button{
+        margin: 0;
+        padding: 5px;
+        line-height: 0.6;
+        min-height: max-content;
+    }
+
+    #card-element{
+        padding: 16px 0;
+    }
+
+    #card-errors{
+        margin: 10px 0px;
+        border-radius: 3px;
+        padding: 8px;
+        font-size: 14px;
+        font-family: 'Montserrat Light';
+        background-color: #FFD2D2;
+        color: #eb1c26;
+    }
+    #card-errors:empty{
+        display: none;
+    }
+}
